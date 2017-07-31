@@ -43,17 +43,10 @@
             }
         }
        function androidclick(){
-            window.location.href="apk下载路劲";
+            window.location.href="下载路径";
        }
        function iosclick(){
-            var name=window.location.href;
-            //字符串截取
-            var start=name.indexOf("NIApp/")+6;
-            name=name.substring(start,name.length);
-            if(name.indexOf("/")>=0){
-                name=name.substring(0,name.indexOf("/"));
-            }
-            window.location.href="itms-services://?action=download-manifest&url=https://raw.githubusercontent.com/luoruowen/NIApp/gh-pages/"+name+"/install.plist";
+            window.location.href="itms-services://?action=download-manifest&url=https://oyf.github.io/ios/Energymanagement/install.plist";
        }
     </script>
 </body>
